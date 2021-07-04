@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features Motors</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" />
+    <!-- owl slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* navbar css */
+        .logo {
+            height: 40px;
+            width: auto;
+            padding-left: 12px;
+        }
+
+        .greybtn {
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+
+        .greenbtn {
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+
+        .pl180 {
+            padding-left: 180px;
+        }
+
+        /* column */
+        .column2 {
+            flex: 0 0 100%;
+            max-width: 20% !important;
+            position: relative;
+            padding-left: 25px;
+        }
+
+
+        /* background image */
+        .bg-img {
+            background-image: url("banner.jpg") !important;
+            height: 400px;
+            width: 100%;
+        }
+
+        .bg-img2 {
+            background-image: url("qutation.png") !important;
+            background-repeat: no-repeat;
+            background-position: 50% 0px;
+        }
+
+        .para1 {
+            font-size: 45px !important;
+            font-weight: 600;
+            line-height: 35px !important;
+            padding-top: 200px !important;
+        }
+
+        .shadecol {
+            background-color: rgba(196, 202, 207, 0.2) !important;
+            border-radius: 100px !important;
+        }
+
+        .lineh {
+            line-height: 0px !important;
+        }
+
+        /* both modal width */
+        .modalwidth {
+            max-width: 100%;
+        }
+
+        .place {
+            font-weight: 600;
+        }
+
+        /* modal 1 */
+        .logotop {
+            height: 35px;
+            width: 115px;
+        }
+
+        .para11 {
+            font-size: 22px !important;
+            font-weight: bold;
+        }
+
+        .para22 {
+            font-weight: 400 !important;
+            line-height: 0px;
+        }
+
+        .btnbottom {
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        /* modal 2 */
+        .m2logotop {
+            height: 35px;
+            width: 115px;
+        }
+
+        .m2para1 {
+            font-weight: 400 !important;
+            line-height: 0px !important;
+            font-size: 20px;
+        }
+
+        .m2para2 {
+            font-size: 22px !important;
+            font-weight: bold;
+        }
+
+        .m2para3 {
+            font-weight: 400 !important;
+            line-height: 0px !important;
+            font-size: 15px;
+        }
+
+        .m2icon {
+            font-family: 'font awesome 5 free';
+            font-weight: 600;
+            padding-left: 22px;
+        }
+
+        .m2para4 {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .m2btnbottom1 {
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .m2para5 {
+            font-size: 12px;
+        }
+
+        .m2btnbottom2 {
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .m2btn2 {
+            background-color: rgb(247, 45, 45) !important;
+            padding-left: 60px !important;
+            padding-right: 60px !important;
+        }
+
+        .m2btnbottom3 {
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .m2btn3 {
+            background-color: rgb(59, 59, 177) !important;
+            padding-left: 60px !important;
+            padding-right: 60px !important;
+        }
+         /* owl slider */
+        .bubble {
+            position: relative;
+            font-family: sans-serif;
+            width: 1230px;
+            /* font-size: 18px; */
+            /* line-height: 24px; */
+            /* background: #fff; */
+            /* border-radius: 10px; */
+            padding: 30px 40px 20px 15px;
+            text-align: center;
+            color: #000;
+        }
+
+        .bubble-bottom-left:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 28px solid #fff;
+            /* border-right: 12px solid transparent;
+  border-top: 12px solid #fff; */
+            border-bottom: 35px solid transparent;
+            left: 575px;
+            bottom: -35px;
+        }
+
+        .imageboxradius {
+            border-radius: 10px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar portion -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#"><img src="logo-min.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto font">
+                <li class="nav-item dropdown pr-5">
+                    <a class="nav-link dropdown-toggle mt-2" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="font-weight-bold">English</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Urdu</a>
+                        <a class="dropdown-item" href="#">Hindi</a>
+                        <a class="dropdown-item" href="#">Chinese</a>
+                        <a class="dropdown-item" href="#">Nepali</a>
+                        <a class="dropdown-item" href="#">Sindhi</a>
+                        <a class="dropdown-item" href="#">Persian</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else</a>
+                    </div>
+                </li>
+                <li class="nav-item pl180">
+                    <a class="nav-link text-center" href="#"><span><i class="fas fa-bell "></i></span><br>
+                        Notifications</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link text-center" href="#"><i class="fas fa-search "></i></span><br> Searches</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#"><i class="fas fa-heart "></i></span><br> Favourites</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link text-center" href="#"><i class="fas fa-comment-alt "></i></span><br> My Chats</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <span class="pr-2"> <a class="btn btn-light border-0 px-3 text-dark greybtn" data-toggle="modal"
+                        data-target="#exampleModal1">LOG
+                        IN</a>
+                    <a class="btn btn-success border-0 text-white greenbtn" data-toggle="modal"
+                        data-target="#exampleModal2">SIGN UP</a></span>
+                <span class="pr-2"><button class="btn btn-warning px-4 rounded-pill border-0 text-white"
+                        type="submit">POST YOUR AD <span><i class="fas fa-edit"></i></span></button></span>
+            </form>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto font-weight-bold">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Motors</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Property for Rent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Property for Sale</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Property New Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Classifieds</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Furniter & Garden</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Mobiles & Tablets</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- background image -->
+    <div class="container-fluid bg-img">
+        <div class="row">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-white lineh para1 pt-5">Find Your Favourite Car</p>
+                    </div>
+                </div>
+                <div class="row mt-4 py-2 shadecol">
+                    <div class="col-md-4">
+                        <a class="nav-link rounded-pill bg-white font-weight-bold text-dark border-0 mx-0 text-left dropdown-toggle"
+                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            All Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Urdu</a>
+                            <a class="dropdown-item" href="#">Hindi</a>
+                            <a class="dropdown-item" href="#">Chinese</a>
+                            <a class="dropdown-item" href="#">Nepali</a>
+                            <a class="dropdown-item" href="#">Sindhi</a>
+                            <a class="dropdown-item" href="#">Persian</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="search" class="form-control border-0 rounded-pill bg-white "
+                            placeholder="What are you looking for?">
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="btn btn-block btn-success rounded-pill ">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row py-4">
+
+            <div class="column2">
+                <button class="btn-lg btn bg-light rounded-pill d-flex row py-3 m-0">
+                    <div class="col-md-8 text-secondary">
+                        <h5>22,600</h5>
+                        <p class="small text-dark lineh">USED CARS</p>
+                    </div>
+                    <div class="col-md-4 my-auto"><img src="car.png" height="30px" width="35px" alt=""></div>
+                </button>
+            </div>
+            <div class="column2">
+                <button class="btn-lg btn bg-light rounded-pill d-flex row py-3 m-0">
+                    <div class="col-md-8 text-secondary">
+                        <h5>22,600</h5>
+                        <p class="small text-dark lineh">USED CARS</p>
+                    </div>
+                    <div class="col-md-4 my-auto"><img src="bike.png" height="30px" width="35px" alt=""></div>
+                </button>
+            </div>
+            <div class="column2">
+                <button class="btn-lg btn bg-light rounded-pill d-flex row py-3 m-0">
+                    <div class="col-md-8 text-secondary">
+                        <h5>22,600</h5>
+                        <p class="small text-dark lineh">USED CARS</p>
+                    </div>
+                    <div class="col-md-4 my-auto"><img src="tool.png" height="30px" width="35px" alt=""></div>
+                </button>
+            </div>
+            <div class="column2">
+                <button class="btn-lg btn bg-light rounded-pill d-flex row py-3 m-0">
+                    <div class="col-md-8 text-secondary">
+                        <h5>22,600</h5>
+                        <p class="small text-dark lineh">USED CARS</p>
+                    </div>
+                    <div class="col-md-4 my-auto"><img src="vihickle.png" height="30px" width="35px" alt=""></div>
+                </button>
+            </div>
+            <div class="column2"><button class="btn-lg btn bg-light rounded-pill d-flex row py-3 m-0">
+                    <div class="col-md-8 text-secondary">
+                        <h5>22,600</h5>
+                        <p class="small text-dark lineh">USED CARS</p>
+                    </div>
+                    <div class="col-md-4 my-auto pr-2"><img src="ship.png" height="30px" width="35px" alt=""></div>
+                </button></div>
+
+        </div>
+    </div>
+    <div class="container-fluid py-5 bg-light">
+        <div class="row ">
+            <div class="col-md-12 text-center ">
+                <h3 class="font-weight-bold">FEATURED BRANDS</h3>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row mt-3 bg-white">
+                <div class="col-md-2"><img src="brand01.png" alt=""></div>
+                <div class="col-md-2"><img src="brand02.png" alt=""></div>
+                <div class="col-md-2"><img src="brand03.jpg" alt=""></div>
+                <div class="col-md-2"><img src="brand04.png" alt=""></div>
+                <div class="col-md-2"><img src="brand05.png" alt=""></div>
+                <div class="col-md-2"><img src="brand06.png" alt=""></div>
+            </div>
+        </div>
+        <div class="container-fluid pb-5">
+            <div class="row pt-5 pb-3">
+                <h3 class="font-weight-bold pl-3">FEATURED LISTINGS</h3>
+                <span class="ml-auto pr-2"><button class="btn"><i class="fas fa-chevron-left"></i></button><button
+                        class="btn"><i class="fas fa-chevron-right"></i></button></span>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="card5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">AED 152,000</h5>
+                                <h5 class="card-title lineh">Lorem, ipsum dolor.</h5>
+                                <p class="card-text">mordi xmncxdws skdk</p>
+                                <hr>
+                                <small>Lorem, ipsum dolor.</small>
+                                <small class="text-success float-right">2mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="card6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">AED 152,000</h5>
+                                <h5 class="card-title lineh">Lorem, ipsum dolor.</h5>
+                                <p class="card-text">mordi xmncxdws skdk</p>
+                                <hr>
+                                <small>Lorem, ipsum dolor.</small>
+                                <small class="text-success float-right">2mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="card7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">AED 152,000</h5>
+                                <h5 class="card-title lineh">Lorem, ipsum dolor.</h5>
+                                <p class="card-text">mordi xmncxdws skdk</p>
+                                <hr>
+                                <small>Lorem, ipsum dolor.</small>
+                                <small class="text-success float-right">2mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="card8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">AED 152,000</h5>
+                                <h5 class="card-title lineh">Lorem, ipsum dolor.</h5>
+                                <p class="card-text">mordi xmncxdws skdk</p>
+                                <hr>
+                                <small>Lorem, ipsum dolor.</small>
+                                <small class="text-success float-right">2mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="card5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">AED 152,000</h5>
+                                <h5 class="card-title lineh">Lorem, ipsum dolor.</h5>
+                                <p class="card-text">mordi xmncxdws skdk</p>
+                                <hr>
+                                <small>Lorem, ipsum dolor.</small>
+                                <small class="text-success float-right">2mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="card6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">AED 152,000</h5>
+                                <h5 class="card-title lineh">Lorem, ipsum dolor.</h5>
+                                <p class="card-text">mordi xmncxdws skdk</p>
+                                <hr>
+                                <small>Lorem, ipsum dolor.</small>
+                                <small class="text-success float-right">2mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><div class="card-deck">
+                    <div class="card border-0">
+                        <img src="card7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">AED 152,000</h5>
+                            <h5 class="card-title lineh">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">mordi xmncxdws skdk</p>
+                            <hr>
+                            <small>Lorem, ipsum dolor.</small>
+                            <small class="text-success float-right">2mins</small>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="item">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="card8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">AED 152,000</h5>
+                                <h5 class="card-title lineh">Lorem, ipsum dolor.</h5>
+                                <p class="card-text">mordi xmncxdws skdk</p>
+                                <hr>
+                                <small>Lorem, ipsum dolor.</small>
+                                <small class="text-success float-right">2mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="row pt-5 pb-3">
+                <h3 class="font-weight-bold pl-3">FEATURED ARTICLES</h3>
+            </div>
+            <div class="row pb-5">
+                <div class="col-md-3">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body bg-light p-0">
+                                <h5 class="card-title">Loremipsumdolor.oremipsumdolor.oremipsum</h5>
+                                <p class="card-text">
+                                    loremloremloremloremLorem,psumdoloipsumdolor.orem,ipsumdolor.psumdolopsumdoloorem,ipsumdolor.Lorem,ipsumdolor.orem,ipsumdolor.orem,ipsumdolor.<span
+                                        class="text-success">Read more.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="10.jpg" class="card-img-top" alt="...">
+                            <div class="card-body bg-light p-0">
+                                <h5 class="card-title">Loremipsumdolor.oremipsumdolor.oremipsum</h5>
+                                <p class="card-text">
+                                    loremloremloremloremLorem,psumdoloipsumdolor.orem,ipsumdolor.psumdolopsumdoloorem,ipsumdolor.Lorem,ipsumdolor.orem,ipsumdolor.orem,ipsumdolor.<span
+                                        class="text-success">Read more.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="11.jpg" class="card-img-top" alt="...">
+                            <div class="card-body bg-light p-0">
+                                <h5 class="card-title">Loremipsumdolor.oremipsumdolor.oremipsum</h5>
+                                <p class="card-text">
+                                    loremloremloremloremLorem,psumdoloipsumdolor.orem,ipsumdolor.psumdolopsumdoloorem,ipsumdolor.Lorem,ipsumdolor.orem,ipsumdolor.orem,ipsumdolor.<span
+                                        class="text-success">Read more.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-deck">
+                        <div class="card border-0">
+                            <img src="12.jpg" class="card-img-top" alt="...">
+                            <div class="card-body bg-light p-0">
+                                <h5 class="card-title">Loremipsumdolor.oremipsumdolor.oremipsum</h5>
+                                <p class="card-text">
+                                    loremloremloremloremLorem,psumdoloipsumdolor.orem,ipsumdolor.psumdolopsumdoloorem,ipsumdolor.Lorem,ipsumdolor.orem,ipsumdolor.orem,ipsumdolor.<span
+                                        class="text-success">Read more.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row py-3">
+            <div class="col-md-12 text-center ">
+                <h3 class="font-weight-bold">USER TESTIMONIALS</h3>
+            </div>
+        </div>
+        <div class="container-fluid bg-white bg-img2 imageboxradius">
+            <div class="row ">
+                <div class="col-md-3">
+                    <div class="bubble bubble-bottom-left" contenteditable>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, fugiat animi nulla
+                            assumenda
+                            error enim! Repellendus reiciendis autem suscipit quo numquam natus? Ut similique quaerat
+                            magni
+                            quos nam, aspernatur sit nesciunt voluptatibus soluta neque quae modi eum sed rerum
+                            odio.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, fugiat animi nulla
+                            assumenda
+                            error enim! Repellendus reiciendis autem suscipit quo numquam natus? Ut similique quaerat
+                            magni
+                            quos nam, aspernatur sit nesciunt voluptatibus soluta neque quae modi eum sed rerum odio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="slider-nav mt-5">
+                    <div class="slider">
+                        <div class="px-2">
+                            <img src="icon1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="px-2">
+                            <img src="icon2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="px-2">
+                            <img src="icon3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="px-2">
+                            <img src="icon4.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="px-2">
+                            <img src="icon6.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="px-2">
+                            <img src="icon6.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+
+    
+</div>
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row py-5 px-3">
+            <div class="col-md-4">
+                <div>
+                    <img src="logo-min.png" width="150px" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, Lorem, ipsum dolor.</p>
+                    <a href="#" class="btn btn-outline-dark rounded-pill px-3"><span class="font-weight-bold">Read
+                            More</span></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <p class="font-weight-bold">Quick Links</p>
+                </div>
+                <div class="row">Home</div>
+                <div class="row">About</div>
+                <div class="row">Product</div>
+                <div class="row">Contact</div>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <p class="font-weight-bold">Popular Categories</p>
+                </div>
+                <div class="row">Cars</div>
+                <div class="row">Jobs</div>
+                <div class="row">Flats For Rent</div>
+                <div class="row">Mobiles</div>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <p class="font-weight-bold">Cityana</p>
+                </div>
+                <div class="row">Help</div>
+                <div class="row">Site map</div>
+                <div class="row">Privacy Policy</div>
+
+            </div>
+
+            <div class="col-md-2 pl-4">
+                <a href="#"><img src="ftr1-min.png" class="pb-2" alt=""></a>
+
+                <a href="#"><img src="ftr2-min.png" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row px-3">
+            <div class="col-md-10">
+                <p> <span><i class="far fa-copyright"></i></span> Copyrights 2020 Cityana.All Rights Reserved .</p>
+            </div>
+            <div class="pl-5"> <span class="pl-3">
+                    <button class="btn rounded-pill bg-primary text-white"><i class="fab fa-facebook"></i>
+                    </button> <button class="btn bg-info text-white rounded-pill"><i class=" fab fa-twitter"></i>
+                    </button> <button class="btn bg-danger text-white rounded-pill"><i class=" fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 1 -->
+    <div class="modal fade p-0" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalwidth m-0">
+            <div class="modal-content">
+                <div class="modal-body"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4 text-center">
+                                        <div class="row ">
+                                            <div class="col-md-12">
+                                                <img class="logotop" src="logo-min.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <p class="para11">Create a account</p>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <p class="para22">Already have an account? <a href=""
+                                                        class="text-decoration-none text-success">Sign in</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center my-3">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control rounded-pill bg-light border-0"
+                                                    placeholder="first name">
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control rounded-pill bg-light border-0"
+                                                    placeholder="last name">
+                                            </div>
+                                        </div>
+                                        <div class="row text-center my-3">
+                                            <div class="col-md-12">
+                                                <input type="email" class="form-control rounded-pill bg-light border-0"
+                                                    placeholder="enter a email">
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <input type="password"
+                                                    class="form-control rounded-pill bg-light border-0"
+                                                    placeholder="enter a password">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3"></div>
+                                            <div class="col-md-6 mt-4 text-center">
+
+                                                <a href="#"
+                                                    class="btn btn-success text-decoration-none px-5 rounded-pill"><span
+                                                        class="btnbottom"> SIGN UP</span></a>
+                                            </div>
+                                            <div class="col-md-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade p-0" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalwidth m-0">
+            <div class="modal-content">
+                <div class="modal-body"><button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4 text-center">
+                                        <div class="row  mb-3">
+                                            <div class="col-md-12">
+                                                <img class="m2logotop" src="logo-min.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <p class="m2para1">Welcome back!</p>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <p class="m2para2">Sign in to your account</p>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <p class="m2para3">Already have an account? <a href=""
+                                                        class="text-decoration-none text-success">Sign up</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center my-3">
+                                            <div class="col-md-12">
+                                                <input type="email"
+                                                    class="form-control rounded-pill m2icon bg-light border-0"
+                                                    placeholder="&#xf007; email">
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <input type="password"
+                                                    class="form-control m2icon rounded-pill bg-light border-0"
+                                                    placeholder="&#xf023; password">
+                                            </div>
+                                        </div>
+                                        <div class="row text-center mt-3">
+                                            <div class="col-md-12">
+                                                <p class="text-danger m2para4">Forgot password?</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3"></div>
+                                            <div class="col-md-6 mt-2 text-center">
+                                                <a href="#"
+                                                    class="btn btn-success text-decoration-none px-5 rounded-pill"><span
+                                                        class="m2btnbottom1"> SIGN UP</span></a>
+                                            </div>
+                                            <div class="col-md-3"></div>
+                                        </div>
+                                        <div class="row text-center mt-2">
+                                            <div class="col-md-12">
+                                                <p class="text-muted m2para5">or sign in with</p>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center mt-2">
+                                            <div class="col-md-6"><a href="#"
+                                                    class="btn m2btn2 text-white text-decoration-none rounded-pill"><span
+                                                        class="m2btnbottom2">Google+</span></a></div>
+                                            <div class="col-md-6"><a href="#"
+                                                    class="btn m2btn3 text-white text-decoration-none rounded-pill"><span
+                                                        class="m2btnbottom3">Facebook</span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
+        <!-- owl slider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </script>
+    <script>
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 5,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });</script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      dots:false,
+      autoplay:true,
+      autoplayspeed:5000,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:4
+          }
+      }
+  })
+        </script>
+    
+      
+</body>
+
+</html>
